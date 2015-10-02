@@ -276,12 +276,68 @@ div#page_content {
 .section_content {
 	padding: 15px;
 }
+.section_footer {
+
+	padding: 5px 15px;
+
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+	-o-box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+}
+.footer_buttons {
+	float: right;
+}
 
 .right {
 	float: right;
 }
 .clear {
 	clear: both;
+}
+button {
+	padding: 9px 15px;
+    background-color: #27a9ff;
+    border: 1px solid #27a9ff;
+    color: white;
+    font-weight: bold;
+    min-width: 100px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0px 0 0 rgba(0, 0, 0, 0.2),inset 0 -2px 0 0 rgba(0, 0, 0, 0.3);
+}
+button:hover {
+	background-color: #2785ff;
+}
+.likes_dislikes_wrapper {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 100%;
+}
+.likes_dislikes_wrapper i {
+	font-size: 155%;
+	display: inline-block;
+	margin: 0 5px;
+	color: #27a9ff;
+	cursor: pointer;
+}
+.likes_dislikes_wrapper i:hover {
+	color: #2785ff;
+}
+.likes_dislikes_wrapper .likes,
+.likes_dislikes_wrapper .dislikes {
+	display: inline-block;
+	margin: 0 5px;
+}
+.likes_dislikes_wrapper .likes .count {
+	color: #00C500;
+}
+.likes_dislikes_wrapper .dislikes .count {
+	color: red;
 }
 
 footer#inner {
@@ -340,4 +396,11 @@ footer#inner {
 	header div#user_top_panel {
 		display: none;
 	}
+
+	.likes_dislikes_wrapper {
+		font-size: 74%;
+    	font-weight: bold;
+    	margin: 0 5px;
+	}
+
 }
