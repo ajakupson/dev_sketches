@@ -1,0 +1,145 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	 font-family: "Lato";
+	 /*font-family: "Oswald";
+	 font-family: "Abel";
+	 font-family: 'Open Sans', sans-serif;
+	 font-family: "Actor", sans-serif;*/
+	 font-style: normal;
+	 font-weight: 400;
+ }
+.page_wrapper {
+	width: 100%;
+	max-width: 1920px;
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+	background: none repeat scroll 0 0 #ededed;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.content_wrapper {
+	width:100%;
+	background: none repeat scroll 0 0 #ededed;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+    align-items: flex-start;
+}
+
+header {
+	width: 100%;
+	height: 80px;
+	background: none repeat scroll 0 0 #27a9ff;
+
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+.logo_container {
+	font-size: 2.1em;
+	color: white;
+	margin-left: 2.604166666666667%;
+}
+.logo_container span {
+	display: inline-block;
+}
+.logo_text {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.logo_add_text {
+	font-size: 0.4em;
+	font-weight: normal;
+	margin-top: 5px;
+}
+
+.section {
+	padding: 15px;
+    position: relative;
+    background: none repeat scroll 0 0 #fff;
+
+	border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+}
+
+.main_nav {
+	width: 13.02083333333333%;
+}
+.main_nav ul {
+	width: 100%;
+	height: calc(100% - 210px);
+}
+.main_nav ul li {
+	padding: 10px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+	cursor: pointer;
+	font-size: .7vw;
+
+	transition: color .25s, background .25s;
+}
+.main_nav ul li:hover {
+	background: none repeat scroll 0 0 #27a9ff;
+	color: white;
+}
+.main_nav ul li:hover .bubble {
+	background: none repeat scroll 0 0 #fff;
+	color: #27a9ff;
+}
+.main_nav ul li span {
+	display: inline-block;
+	margin: 5px;
+}
+.main_nav_option_text {
+	/*font-size: .9em;*/
+}
+
+.bubble {
+	display: inline-block;
+	margin-left: 10px;
+	background: none repeat scroll 0 0 #27a9ff;
+    padding: 5px;
+    margin: 0 0 0 10px !important;
+    color: white;
+    border-radius: 50%;
+    font-size: .8em;
+    width: auto;
+
+    transition: color .25s, background .25s;
+}
+
+.page_content {
+	width: 85.9375%;
+	margin: 0.5208333333333333%;
+}
+.page_content .section {
+	margin-bottom: 0.5208333333333333%;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+    padding-bottom: 5px;
+    font-size: .85em;
+    font-weight: normal;
+}
+h1 span {
+	display: inline-block;
+}
+
+#user_phone {
+	margin-left: 15px;
+}
+
+
+footer {
+	width: 100%;
+	height: 100px;
+	background: none repeat scroll 0 0 #333333;
+}
