@@ -69,7 +69,7 @@
 					<div class="section_heading">Main Navigation</div>
 					<ul>
 						<li class="active"><a href="#"><i class="fa fa-home"></i>Homepage</a></li>
-						<li><a href="#"><i class="fa fa-users"></i>Friends<span class="bubble">+4</span></a></li>
+						<li><a href="friends.html"><i class="fa fa-users"></i>Friends<span class="bubble">+4</span></a></li>
 						<li><a href="#"><i class="fa fa-envelope"></i>Messages<span class="bubble">+20</span></a></li>
 						<li><a href="#"><i class="fa fa-camera"></i>Photos</a></li>
 						<li><a href="#"><i class="fa fa-street-view"></i>Map</a></li>
@@ -89,57 +89,300 @@
 							<div class="right"><span>Edit</span><i class="fa fa-pencil-square-o"></i></div>
 						</h1>
 						<div class="section_content">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</div>
-						<div class="section_footer">
-							<div class="footer_buttons">
-								<div class="likes_dislikes_wrapper">
-									<span class="likes">
-										<span class="count">+237</span>
-										<i class="fa fa-thumbs-o-up"></i>
-									</span>
-									<span class="dislikes">
-										<span class="count">-29</span>
-										<i class="fa fa-thumbs-o-down"></i>
-									</span>
+							<div id="user_information">
+								<div id="profile_pic_and_buttons">
+									<img src="assets/images/mockups/users/ava10.jpg"/>
+									<div class="image_toolbar">
+										<i class="fa fa-repeat"></i>
+										<i class="fa fa-plus"></i>
+										<i class="fa fa-times"></i>
+									</div>
+									<div class="buttons">
+										<button>Add to Friends</button>
+										<button>Send Message</button>
+										<button>Photoalbums</button>
+										<button>Add to Favorites</button>
+										<button>Block</button>
+									</div>
 								</div>
-								<button>Reply</button>
+								<div id="profile_cover_and_accordeon">
+									<div id="profile_cover" style="background:url('assets/images/mockups/covers/cover1_mod.jpg')">
+										<div class="image_toolbar">
+											<i class="fa fa-plus"></i>
+											<i class="fa fa-times"></i>
+										</div>
+										<img src="assets/images/mockups/covers/cover1_mod.jpg"/>
+										<div id="status_text">
+											<div>Lorem ipsum dolot sit amet lorem ipsum dolor sit amet, lorem ipsum dolor ...</div>
+											<div id="status_date">29 minutes ago</div>
+										</div>
+									</div>
+									<div id="user_info_accordeon" class="accordeon">
+										<section>
+											<h1>
+												Main Information
+												<div class="buttons right">
+													<i class="fa fa-arrow-down"></i>
+												</div>
+											</h1>
+											<div class="accordeon_panel">
+												<div class="info_line">
+													<div class="info_title">Phone operator: </div>
+													<div class="info_data">EMT</div>
+												</div>
+												<div class="info_line last">
+													<div class="info_title">Date of Birth: </div>
+													<div class="info_data">27.05.1989</div>
+												</div>
+												<div class="info_line second">
+													<div class="info_title">High Education: </div>
+												</div>
+												<div class="info_line third second underlined">
+													<div class="info_title">Degree: </div>
+												</div>
+												<div class="info_line third">
+													<div class="info_title">University: </div>
+													<div class="info_data">Tallinn University Of Technology</div>
+												</div>
+												<div class="info_line third">
+													<div class="info_title">Faculty: </div>
+													<div class="info_data">Information Technologies</div>
+												</div>
+												<div class="info_line third">
+													<div class="info_title">Specialty: </div>
+													<div class="info_data">Software Developer</div>
+												</div>
+												<div class="info_line third last">
+													<div class="info_title">Degree: </div>
+													<div class="info_data">Bachelor</div>
+												</div>
+												<div class="info_line second">
+													<div class="info_title">Career: </div>
+												</div>
+												<div class="info_line third second underlined">
+													<div class="info_title">Workplace: </div>
+												</div>
+												<div class="info_line third undelined">
+													<div class="info_title">Company: </div>
+													<div class="info_data">FastVPS Eesti OU</div>
+												</div>
+												<div class="info_line third undelined">
+													<div class="info_title">Position: </div>
+													<div class="info_data">Software Developer</div>
+												</div>
+											</div>
+
+										</section>
+										<section>
+											<h1>
+												Additional Information
+												<div class="buttons right">
+													<i class="fa fa-arrow-down"></i>
+												</div>
+											</h1>
+											<div class="accordeon_panel">
+												<div class="info_line third">
+													<div class="info_title">Email: </div>
+													<div class="info_data">ajakupsopn@gmail.com</div>
+												</div>
+												<div class="info_line third">
+													<div class="info_title">Country: </div>
+													<div class="info_data">Estonia</div>
+												</div>
+												<div class="info_line third">
+													<div class="info_title">City: </div>
+													<div class="info_data">Johvi</div>
+												</div>
+												<div class="info_line third">
+													<div class="info_title">Street: </div>
+													<div class="info_data">Kaare 1-29</div>
+												</div>
+												<div class="info_line third">
+													<div class="info_title">Website: </div>
+													<div class="info_data">http://www.airsim.com</div>
+												</div>
+											</div>
+										</section>
+										<section>
+											<h1>
+												Hobbies
+												<div class="buttons right">
+													<i class="fa fa-arrow-down"></i>
+												</div>
+											</h1>
+										</section>
+									</div>
+								</div>
+								<div id="user_location_map"></div>
 							</div>
-							<div class="clear"></div>	
+							<div class="clear"></div>
 						</div>
 					</section>
-					<section class="section">
+					<section class="section" style="display: none;">
 						<h1>
 							Last Added Contacts
 							<div class="right"><i class="fa fa-search"></i></div>
 						</h1>
 						<div class="section_content">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</div>
-						<div class="section_footer">
-							<div class="footer_buttons">
-								<div class="likes_dislikes_wrapper">
-									<span class="likes">
-										<span class="count">+1,023</span>
-										<i class="fa fa-thumbs-o-up"></i>
-									</span>
-									<span class="dislikes">
-										<span class="count">-11</span>
-										<i class="fa fa-thumbs-o-down"></i>
-									</span>
-								</div>
-								<button>Reply</button>
+							<div class="last_added_contacts_content">
+								<ul id="last_added_contacts">
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava1.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status online">Online</span><br/>
+											<span class="user_name">
+												<span class="first_name">Fedor</span>
+												<span class="last_namve">Anisimov</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava1.png"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status online">Online</span><br/>
+											<span class="user_name">
+												<span class="first_name">Alexander</span>
+												<span class="last_namve">Egorov</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava2.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status offline">Offline</span><br/>
+											<span class="user_name">
+												<span class="first_name">Evegniy</span>
+												<span class="last_namve">Ermal</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava3.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status offline">Offline</span><br/>
+											<span class="user_name">
+												<span class="first_name">Ekaternia</span>
+												<span class="last_namve">Belova</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava4.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status online">Online</span><br/>
+											<span class="user_name">
+												<span class="first_name">Aleksandra</span>
+												<span class="last_namve">Popova</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava11.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status online">Online</span><br/>
+											<span class="user_name">
+												<span class="first_name">Unknown</span>
+												<span class="last_namve">Unspoken</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava5.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status online">Online</span><br/>
+											<span class="user_name">
+												<span class="first_name">Peter</span>
+												<span class="last_namve">Simson</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava6.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status offline">Offline</span><br/>
+											<span class="user_name">
+												<span class="first_name">Easter</span>
+												<span class="last_namve">Simson</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava8.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status online">Online</span><br/>
+											<span class="user_name">
+												<span class="first_name">Alexander</span>
+												<span class="last_namve">Marchenko</span>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="contact_profile_pic_wrap">
+											<img src="assets/images/mockups/users/ava9.jpg"/>
+										</div>
+										<div class="statuc_and_user_name">
+											<span class="status offline">Offline</span><br/>
+											<span class="user_name">
+												<span class="first_name">Jinn</span>
+												<span class="last_namve">Ifrit</span>
+											</span>
+										</div>
+									</li>
+								</ul>
 							</div>
-							<div class="clear"></div>	
+							<div class="clear"></div>
 						</div>
 					</section>
-					<section class="section">
+					<section class="section" style="display: none;">
 						<h1>
 							Last Added Photos
 							<div class="right"><i class="fa fa-search"></i></div>
 						</h1>
 						<div class="section_content">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<ul id="last_added_photos">
+								<li><img src="assets/images/mockups/albums/Sea/Sea1.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea2.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea3.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea4.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea5.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea6.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea7.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea8.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea9.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea10.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea11.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea12.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Sea/Sea13.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt1.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt2.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt3.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt4.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt5.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt6.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt7.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt8.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt9.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt10.jpg"/></li>
+								<li><img src="assets/images/mockups/albums/Egypt/Egypt11.jpg"/></li>
+							</ul>
 						</div>
 						<div class="section_footer">
 							<div class="footer_buttons">
@@ -158,28 +401,267 @@
 							<div class="clear"></div>	
 						</div>
 					</section>
-					<section class="section">
+					<aside id="contacts_and_photos" class="right">
+						<section id="user_contacts" class="section">
+							<h1>
+								Contacts (<span class="online_count">5</span> online)
+								<div class="right"><i class="fa fa-search"></i></div>
+							</h1>
+							<div class="user_contacts">
+								<ul>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava1.jpg" src="assets/images/mockups/users/ava1.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava2.jpg" src="assets/images/mockups/users/ava2.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava3.jpg" src="assets/images/mockups/users/ava3.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava4.jpg" src="assets/images/mockups/users/ava4.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava5.jpg" src="assets/images/mockups/users/ava5.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava6.jpg" src="assets/images/mockups/users/ava6.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava7.jpg" src="assets/images/mockups/users/ava7.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava8.jpg" src="assets/images/mockups/users/ava8.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava9.jpg" src="assets/images/mockups/users/ava9.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava10.jpg" src="assets/images/mockups/users/ava10.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img ng-src="assets/images/mockups/users/ava11.jpg" src="assets/images/mockups/users/ava11.jpg">
+										</div>
+										<span class="status online"></span>		
+										<div class="contact_name">Name Family</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+						<section id="user_photos" class="section">
+							<h1>
+								Photos (<span class="photos_count">235</span>)
+								<div class="right"><i class="fa fa-search"></i></div>
+							</h1>
+							<div>
+								<ul>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/1.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/2.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/3.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/4.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/5.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/6.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/7.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/8.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/9.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/10.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/11.jpg">
+										</div>
+									</li>
+									<li>
+										<div class="pic_holder">
+											<img src="assets/images/mockups/albums/Other/12.jpg">
+										</div>
+									</li>
+								</ul>
+							</div>
+						</section>
+
+					</aside>
+					<section class="section" id="diary">
 						<h1>Diary</h1>
 						<div class="section_content">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</div>
-						<div class="section_footer">
-							<div class="footer_buttons">
-								<div class="likes_dislikes_wrapper">
-									<span class="likes">
-										<span class="count">+56</span>
-										<i class="fa fa-thumbs-o-up"></i>
-									</span>
-									<span class="dislikes">
-										<span class="count">-159</span>
-										<i class="fa fa-thumbs-o-down"></i>
-									</span>
+							<article class="diary_record">
+								<h1>
+									<div class="diary_record_author">
+										<img src="assets/images/mockups/users/ava8.jpg"/>
+									</div>
+									<span class="diary_record_title">Lorem ipsum dolor sit amet</span>
+									<div class="diary_record_date right">04.10.2015</div>
+									<div class="clear"></div>
+								</h1>
+								<div class="diary_record_content">
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+									<ul class="diary_record_images">
+										<li><img src="assets/images/mockups/albums/Other/2.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/10.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/14.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/15.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/17.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/18.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/19.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/20.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/21.jpg"/></li>
+										<li><img src="assets/images/mockups/albums/Other/22.jpg"/></li>
+									</ul>
+									<div class="clear"></div>
 								</div>
-								<button>Reply</button>
-							</div>
-							<div class="clear"></div>	
+								<div class="section_footer">
+									<div class="footer_buttons">
+										<div class="likes_dislikes_wrapper">
+											<span class="likes">
+												<span class="count">+56</span>
+												<i class="fa fa-thumbs-o-up"></i>
+											</span>
+											<span class="dislikes">
+												<span class="count">-159</span>
+												<i class="fa fa-thumbs-o-down"></i>
+											</span>
+										</div>
+										<button>Reply</button>
+									</div>
+									<div class="clear"></div>	
+								</div>
+							</article>
+							<article class="diary_record">
+								<h1>
+									<div class="diary_record_author">
+										<img src="assets/images/mockups/users/ava8.jpg"/>
+									</div>
+									<span class="diary_record_title">Lorem ipsum dolor sit amet</span>
+									<div class="diary_record_date right">04.10.2015</div>
+									<div class="clear"></div>
+								</h1>
+								<div class="diary_record_content">
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+								</div>
+								<div class="section_footer">
+									<div class="footer_buttons">
+										<div class="likes_dislikes_wrapper">
+											<span class="likes">
+												<span class="count">+56</span>
+												<i class="fa fa-thumbs-o-up"></i>
+											</span>
+											<span class="dislikes">
+												<span class="count">-159</span>
+												<i class="fa fa-thumbs-o-down"></i>
+											</span>
+										</div>
+										<button>Reply</button>
+									</div>
+									<div class="clear"></div>	
+								</div>
+							</article>
 						</div>
 					</section>
+					<div class="clear"></div>
+				</div>
+
+				<div id="notifications">
+					<div class="notification">
+						<h1>
+							<span class="notification_type">User has sent You a message!</span>
+							<div class="right"><i class="fa fa-times-circle"></i></div>
+						</h1>
+						<div class="notification_body">
+							<div class="notification_pic_and_author">
+								<div class="pictre_holder">
+									<img src="assets/images/mockups/users/ava8.jpg"/>
+								</div>
+								<div class="notification_from">Alexander Anisimov</div>
+							</div>
+							<div class="notification_text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
 				</div>
 
 				<footer id="inner"></footer>
@@ -188,6 +670,7 @@
 		</div>
 
 		<script type="text/javascript" src="assets/3rd_party_libs/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="assets/3rd_party_libs/jHERE/jhere.js"></script>
 		<script type="text/javascript" src="assets/js/homepage.js"></script>
 
 	</body>
