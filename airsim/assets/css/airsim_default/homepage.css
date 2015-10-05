@@ -297,6 +297,7 @@ div#page_content {
 }
 
 div#user_information {
+	width:100%;
 	float: left;
 	display: flex;
     flex-flow: row wrap;
@@ -308,7 +309,7 @@ div#user_information {
 div#user_location_map {
 	float: left;
 	width: 300px;
-	min-width: 300px;
+	/*min-width: 300px;*/
 	height: 400px;
 
 	box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
@@ -351,7 +352,7 @@ div#profile_pic_and_buttons:hover .image_toolbar {
 	min-height: 23px;
 }
 div#profile_cover_and_accordeon {
-	min-width: 415px;
+	/*min-width: 415px;*/
 	min-height: 400px;
 	height: auto;
 	position: relative;
@@ -707,6 +708,9 @@ button:hover {
 	-moz-transition: none;
 	-o-transition: color 0 ease-in;
 }
+.accordeon section h1 {
+	cursor: pointer;
+}
 .accordeon .accordeon_panel {
 	display: none;
 	overflow: hidden;
@@ -771,7 +775,6 @@ footer#inner {
     color: black;
     border: none;
     border-bottom: 1px solid #F0F0F0;
-    line-height: 64px;
 
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -803,8 +806,10 @@ footer#inner {
     border-radius: 50%;
 
 }
-.diary_record_title {
-	margin: 0 0 0 10px;
+.diary_record_title,
+.diary_record_date {
+    margin: 25px 0 0 10px;
+    display: inline-block;
 }
 section#diary .section_content {
 	padding: 0;
@@ -849,12 +854,17 @@ section#diary .section_content {
 		bottom: 10px;
 		left: 10px;
 		font-size: 95%;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 	.notification {
 		width: 100%;
+		max-height: 201px;
 		background: white;
 		border: 1px solid #C4C6C7;
 		position: relative;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 	.notification h1 {
 		font-size: 95%;
@@ -902,6 +912,9 @@ section#diary .section_content {
 		float:left;
 		padding: 10px;
 		width: calc(100% - 100px);
+		max-height: 128px;
+		overflow: hidden;
+		text-overflow: ellipsis;
 	}
 /* END Notifications */
 
@@ -926,7 +939,7 @@ section#diary .section_content {
 	}
 
 	aside#contacts_and_photos .section {
-    	width: calc(50% - 10px);
+    	width: calc(50% - 5px);
 		float: left;
 	}
 
@@ -989,6 +1002,33 @@ section#diary .section_content {
 		display: none;
 	}
 
+	.section_content {
+		padding: 5px !important;
+	}
+
+	.info_data {
+		margin-left: 10px !important;
+	}
+
+	section#user_contacts,
+	section#user_photos {
+		width: 100% !important;
+	}
+
+	section#user_photos {
+		width: 100% !important;
+    	margin: 10px 0 0 0 !important;
+	}
+
+	.hide_for_w533 {
+		display: none;
+	}
+
+	div#notifications {
+		width: 350px;
+		font-size: 95%;
+	}
+
 }
 
 @media only screen and (max-width: 414px) {
@@ -1002,4 +1042,19 @@ section#diary .section_content {
     	margin: 0 5px;
 	}
 
+	div#notifications {
+		width: 237px;
+		font-size: 80%;
+	}
+
+	.info_data {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+
+	.hide_for_w320 {
+		display: none;
+	}
 }

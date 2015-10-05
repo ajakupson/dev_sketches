@@ -17,11 +17,36 @@ input[type="password"]:focus,
 textarea:focus {
 	border-color: #27A9FF;
 }
-
 .input_with_btn {
 	border-radius: 5px 0 0 5px !important;
 	margin-right: -4px !important;
 }
 .btn_for_input {
 	border-radius: 0 5px 5px 0 !important;
+}
+
+.no_b_border {
+    border-bottom: none !important;
+}
+.status_online {
+	display: block;
+	color: #30B512;
+	font-weight: bold;
+	font-size: 85%;
+	text-align: center;
+	padding-top: 3px;
+}
+.status_offline {
+	display: block;
+	color: red;
+	font-weight: bold;
+	font-size: 85%;
+	text-align: center;
+	padding-top: 3px;
+}
+.show_for_w533 {
+	display: none;
+}
+.invisible {
+	visibility: hidden;
 }
