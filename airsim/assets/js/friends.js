@@ -43,4 +43,9 @@ $(document).ready(function(){
     });
     
     $(".tabs").lightTabs();
+
+    $('#f_country').selectric();
+    $('#f_city').selectric();
+    $('#c_country').selectric();
+    $('#c_city').selectric();
 });

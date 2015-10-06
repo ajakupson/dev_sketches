@@ -1,3 +1,4 @@
+/* START Forms */
 input[type="text"], input[type="password"], textarea {
     height: 33px;
     width: 50%;
@@ -6,7 +7,7 @@ input[type="text"], input[type="password"], textarea {
     border-width: 1px;
 	outline: none;
 	margin: 0;
-	padding: 0 0 0 17px; 
+	padding: 5px 15px; 
 
     box-shadow: inset 2px 2px 2px 0px rgba(42, 42, 42, .12);
 
@@ -17,6 +18,35 @@ input[type="password"]:focus,
 textarea:focus {
 	border-color: #27A9FF;
 }
+
+input[type="checkbox"],
+input[type="radio"] {
+    display:none;            
+}
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+
+}
+input[type="checkbox"] + label::after,
+input[type="radio"] + label::after {	
+	font-family: FontAwesome;
+	font-size: 160%;
+    content: "\f096";
+    display: inline-block;
+    margin: 0 10px;
+    color: #27a9ff;
+    cursor: pointer;
+}
+input[type="radio"] + label::after {
+	content: "\f10c";
+}
+input[type="checkbox"]:checked + label::after {
+	content: "\f046";
+}
+input[type="radio"]:checked + label::after {
+	content: "\f05d";
+}
+
 .input_with_btn {
 	border-radius: 5px 0 0 5px !important;
 	margin-right: -4px !important;
@@ -25,6 +55,40 @@ textarea:focus {
 	border-radius: 0 5px 5px 0 !important;
 }
 
+.form_block {
+    border: 1px solid #F0F0F0;
+
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.field_line {
+	display: block;
+	width: 100%;
+	margin: 7px 10px;
+
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+.field_line label {
+	width: 40% !important;
+	min-width: 40% !important;
+	display: inline-block;
+	text-align: left;
+	padding-left: 10px;
+}
+/* END Froms*/
+
+.w50p {
+	width: 50% !important;
+}
+.pb120px {
+	padding-bottom: 50px !important;
+}
 .no_b_border {
     border-bottom: none !important;
 }
@@ -44,9 +108,24 @@ textarea:focus {
 	text-align: center;
 	padding-top: 3px;
 }
-.show_for_w533 {
-	display: none;
-}
 .invisible {
 	visibility: hidden;
 }
+
+/* START Selectric */
+.selectric-items li.selected {
+	color: white;
+	background-color: #2785ff;
+}
+.selectric-items li:hover {
+  background: #27a9ff;
+  color: #fff;
+}
+/* END Selectric */
+
+/* START Responsiveness */
+.show_for_w533 {
+	display: none;
+}
+/* END Responsiveness */
+

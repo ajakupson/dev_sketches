@@ -1,16 +1,16 @@
-.tabs{
+.tabs {
     display:inline-block;
     width:100%;
 }
 .tabs > div{
     padding-top:10px;
 }
-.tabs ul{
+.tabs ul {
     margin:0px;
     padding:0px;
     width: 100%;
 }
-.tabs ul li {
+.tabs > ul > li {
     list-style: none;
     font-weight: bold;
     font-size: 95%;
@@ -25,15 +25,15 @@
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0 0px 0 0 rgba(0, 0, 0, 0.2),inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
 }
-.tabs ul li.active, .tabs ul li.active:hover{
+.tabs > ul > li.active, .tabs > ul > li.active:hover {
     background:#27a9ff;
     color:#fff;
 }
-.tabs ul li:hover{
+.tabs > ul > li:hover{
     background-color: #111;
     color: #27a9ff;
 }
-.tabs ul li i {
+.tabs > ul > li i {
     margin: 0 10px;
 }
 .tab {
@@ -47,6 +47,7 @@
     width: 100%;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 
     box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
 }
@@ -57,16 +58,24 @@
     text-align: left;
     margin: 0 auto;
     margin: 5px;
+    text-align: right;
 }
 .search_input {
     width: 50% !important;
     max-width: 436px !important;
     min-width: 158px;
 }
-.contacts_block {
-    width: calc(50% - 10px);
-    margin: 10px auto;
+.contacts_block, .form_block {
+    width: calc(33.333333% - 10px);
+    margin: 10px 0;
     display: inline-block;
+    order: 2;
+}
+.form_block {
+    margin-top: 15px !important;
+    margin-left: 5px !important;
+    margin-bottom: 15px !important;
+    order: 3;
 }
 .contact {
     widows: 100%;
@@ -98,6 +107,7 @@
 }
 .contact_section.name_phone {
     margin-right: 0 !important;
+    width: 20% !important;
 }
 .contact_section.name_phone .phone {
     font-weight: bold;
@@ -142,6 +152,45 @@
     clear: both
 }
 
+.updates_block {
+    width: 100%;
+    text-align: center;
+}
+.updates_block h2 {
+    font-size: 110%;
+    border-bottom: 1px solid #F0F0F0;
+    padding: 5px;
+}
+.updates_block label {
+    display: inline-block;
+    width: 130px !important;
+    margin: 5px 0;
+    float: left;
+}
+
+.selectric-wrapper {
+    width: 50%;
+    display: inline-block;
+}
+.short_input {
+    width: 25% !important;
+}
+.short_span {
+    display: inline-block;
+    margin: 0 3.929520127002091% !important;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .form_block {
+        width: 100%;
+        order: 1;
+    }
+    .contacts_block {
+        width: calc(50% - 10px) !important;
+    }
+}
+
 @media only screen and (max-width: 533px) {
 
     .tab_content {
@@ -166,6 +215,7 @@
     .search_btn {
         width: 100% !important;
         border-radius: 0 0 5px 5px !important;
+        margin-left: 4px;
     }
 
     .contacts_block {
@@ -173,3 +223,12 @@
     }
 
 }
+
+@media only screen and (max-width: 414px) {
+
+    .short_input {
+        width: 100% !important;
+        margin: 7px 0 7px 0 !important;
+    }
+
+} 
