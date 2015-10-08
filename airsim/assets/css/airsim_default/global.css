@@ -46,6 +46,11 @@ input[type="checkbox"]:checked + label::after {
 input[type="radio"]:checked + label::after {
 	content: "\f05d";
 }
+textarea {
+	resize: none;
+	padding-top: 8px;
+	min-height: 75px;
+}
 
 .input_with_btn {
 	border-radius: 5px 0 0 5px !important;
@@ -110,6 +115,9 @@ input[type="radio"]:checked + label::after {
 }
 .invisible {
 	visibility: hidden;
+}
+.clear {
+	clear: both;
 }
 
 /* START Selectric */
