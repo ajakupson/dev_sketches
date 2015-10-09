@@ -1,17 +1,3 @@
-* {
-	padding: 0;
-	margin: 0;
-
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-
-	transition: 0.25s;
-	-webkit-transition: 0.25s;
-	-moz-transition: 0.25s;
-	-o-transition: 0.25s;
-}
 #user_location_map * {
 	transition: none;
 	-webkit-transition: none;
@@ -622,24 +608,6 @@ section#user_photos ul li img {
 .clear {
 	clear: both;
 }
-button {
-	padding: 9px 15px;
-    background-color: #27a9ff;
-    border: 1px solid #27a9ff;
-    color: white;
-    font-weight: bold;
-    min-width: 100px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 0px 0 0 rgba(0, 0, 0, 0.2),inset 0 -2px 0 0 rgba(0, 0, 0, 0.3);
-}
-button:hover {
-	background-color: #2785ff;
-}
 
 .likes_dislikes_wrapper {
 	display: inline-block;
@@ -765,6 +733,13 @@ footer#inner {
 }
 
 /* START Diary */
+.diary_add_record_form {
+	margin: 10px;
+	position: relative;
+}
+.diary_add_record_form textarea {
+	width: 100%;
+}
 .diary_record {
 	font-size: 110%;
 }
@@ -994,6 +969,20 @@ section#diary .section_content {
 		width: 100% !important;
 		margin: 5px 0 !Important;
 	}
+
+	section#user_contacts,
+	section#user_photos {
+		width: 100% !important;
+	}
+
+	section#user_photos {
+		width: 100% !important;
+    	margin: 10px 0 0 0 !important;
+	}
+
+	.diary_record_images li {
+		width: calc(50% - 20px) !important;
+	}
 }
 
 @media only screen and (max-width: 533px) {
@@ -1008,16 +997,6 @@ section#diary .section_content {
 
 	.info_data {
 		margin-left: 10px !important;
-	}
-
-	section#user_contacts,
-	section#user_photos {
-		width: 100% !important;
-	}
-
-	section#user_photos {
-		width: 100% !important;
-    	margin: 10px 0 0 0 !important;
 	}
 
 	.hide_for_w533 {
@@ -1049,6 +1028,15 @@ section#diary .section_content {
 
 	.info_data {
 		width: 100%;
+	}
+
+	.diary_record_images li {
+		width: calc(100% - 20px) !important;
+	}
+
+	.diary_record_images li:first-child, 
+	.diary_record_images li:nth-child(2) {
+    	width: calc(100% - 20px) !important;
 	}
 }
 

@@ -51,6 +51,10 @@
 
     box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
 }
+.contacts_block button,
+.updates_block button {
+    font-size: 90%;
+}
 
 .tab_top_ctrls_wrapper {
     display: inline-block;
@@ -115,7 +119,7 @@
 }
 .contact_section .line {
     color: black;
-    font-weight: 400px;
+    font-weight: 600;
     border-bottom: 1px solid #F0F0F0;
     padding: 5px;
     display: block;
