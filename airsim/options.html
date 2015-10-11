@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AirSim</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" media="all" href="assets/css/font-awesome.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="assets/css/airsim_default/selectric_plus.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="assets/css/airsim_default/global.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="assets/css/airsim_default/homepage.css"/>
+		<link rel="stylesheet" type="text/css" media="all" href="assets/css/airsim_default/options.css"/>
+
+		<!-- BEGIN Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="assets/images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="assets/images/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<!-- END Favicon -->
+	</head>
+	<body>
+		<div id="container">
+
+			<header id="inner">
+
+				<div class="logo">
+					<img src="assets/images/airsim_logo_white.svg"/>
+					<div class="logo_text">AIRSIM</div>
+				</div>
+
+				<div id="user_top_panel">
+					<div class="buttons">
+						<div class="btn">
+							<i class="fa fa-comment"></i>
+							<span class="bubble">+20</span>
+						</div>
+						<div class="btn">
+							<i class="fa fa-male"></i>
+							<span class="bubble">+4</span>
+						</div>
+						<div class="btn"><i class="fa fa-bell"></i></div>
+					</div>
+					<div class="logged_in_as">
+						<img src="assets/images/mockups/users/ava10.jpg"/>
+						<span class="text">You are logged in as<br/><strong>Dominic Santiago</strong></span>
+					</div>
+				</div>
+			</header>
+
+			<div id="menu_toggle">
+				<div class="btn_wrap">
+					<i class="fa fa-bars"></i>
+				</div>
+				<span class="text">MENU</span>
+			</div>
+
+			<div id="content_wrapper">
+
+				<nav id="main_nav">
+					<div class="section_heading">Main Navigation</div>
+					<ul>
+						<li class="active"><a href="homepage.html"><i class="fa fa-home"></i>Homepage</a></li>
+						<li><a href="friends.html"><i class="fa fa-users"></i>Friends<span class="bubble">+4</span></a></li>
+						<li><a href="chats.html"><i class="fa fa-envelope"></i>Messages<span class="bubble">+20</span></a></li>
+						<li><a href="photo_albums.html"><i class="fa fa-camera"></i>Photos</a></li>
+						<li><a href="#"><i class="fa fa-street-view"></i>Map</a></li>
+						<li><a href="#"><i class="fa fa-newspaper-o"></i>News</a></li>
+						<li><a href="options.html"><i class="fa fa-cog"></i>Options</a></li>
+						<li><a href="#"><i class="fa fa-cogs"></i>Advanced</a></li>
+						<li><a href="#"><i class="fa fa-cloud-download"></i>Safe</a></li>
+						<li><a href="#"><i class="fa fa-heart"></i>Favorites</a></li>
+					</ul>
+				</nav>
+
+				<div id="page_content">
+					<h1>Contacts</h1>
+					<section class="section">
+						<div class="section_content">
+							<div class="tabs">
+	    						<ul>
+							        <li><i class="fa fa-eye-slash"></i><span class="hide_for_w1023">Private</span></li>
+							        <li><i class="fa fa-arrows-h"></i><span class="hide_for_w1023">Synchronization</span></li>
+							        <li><i class="fa fa-certificate"></i><span class="hide_for_w1023">Safety</span></li>
+							        <li><i class="fa fa-user"></i><span class="hide_for_w1023">Personal Data</span></li>
+	    						</ul>
+		    					<div>
+							        <div id="tab_private" class="tab">
+							        	<div class="tab_content">
+							        		<div class="settings">
+								        		<div class="field_line">
+									        		<label for="phone_num_visibility">Phone number is visible to:</label>
+									        		<select id="phone_num_visibility">
+									        			<option>all</option>
+									        			<option>friends only</option>
+									        		</select>
+									        	</div>
+									        	<div class="field_line">
+									        		<label for="add_info_visibility">Addtional info is visible to:</label>
+									        		<select id="add_info_visibility">
+									        			<option>all</option>
+									        			<option>friends only</option>
+									        		</select>
+									        	</div>
+									        	<div class="field_line">
+								        			<label for="friends_visibility">Friends are visible to:</label>
+								        			<select id="friends_visibility">
+								        				<option>all</option>
+								        				<option>friends only</option>
+								        			</select>
+								        		</div>
+								        		<div class="field_line">
+									        		<label for="is_search_by_phone_on">Allow search me by phone number:</label>
+									        		<select id="is_search_by_phone_on">
+									        			<option>yes</option>
+									        			<option>no</option>
+									        		</select>
+									        	</div>
+									        	<div class="field_line">
+									        		<label for="sending_messages">Sending messages is allowed to:</label>
+									        		<select id="sending_messages">
+									        			<option>all</option>
+									        			<option>friends only</option>
+									        			<option>nobody</option>
+									        		</select>
+									        	</div>
+									        </div>
+							        	</div>
+							        </div>
+							    	<div id="tab_sync" class="tab">
+							        	<div class="tab_content">
+							        		<div class="settings">
+								        		<div class="field_line">
+									        		<label for="auto_sync">Automatic synchronization between phone and website:</label>
+									        		<select id="auto_sync">
+									        			<option>phone number</option>
+									        			<option>phone number, N.F.</option>
+									        			<option>phone number, addtional information</option>
+									        			<option>phone number, N.F., addtional information</option>
+									        		</select>
+									        	</div>
+									        </div>
+							        	</div>
+							        </div>
+							        <div id="tab_safety" class="tab">
+							        	<div class="tab_content">
+							        		<div class="settings">
+							        			<h2>Change phone number:</h2>
+							        			<div class="field_line">
+							        				<label for="new_phone_number">New phone number:</label>
+							        				<input type="text" id="new_phone_number"/>
+							        			</div>
+							        			<div class="field_line">
+							        				<button type="button" class="right">Get confirmation code</button>
+							        			</div>
+							        			<div class="field_line">
+							        				<label for="confirmation_code">Confirmation code:</label>
+							        				<input type="text" id="confirmation_code"/>
+							        			</div>
+							        			<div class="field_line">
+							        				<button type="button" class="right">Save</button>
+							        			</div>
+							        		</div>
+							        		<div class="settings">
+							        			<h2>Change password:</h2>
+							        			<div class="field_line">
+							        				<label for="old_password">Old password:</label>
+							        				<input type="text" id="old_password"/>
+							        			</div>
+							        			<div class="field_line">
+							        				<label for="new_password">New password:</label>
+							        				<input type="text" id="new_password"/>
+							        			</div>
+							        			<div class="field_line">
+							        				<label for="confirm_new_password">Confirm new password:</label>
+							        				<input type="text" id="confirm_new_password"/>
+							        			</div>
+							        			<div class="field_line">
+							        				<button type="button" class="right">Save</button>
+							        			</div>
+							        		</div>
+							        	</div>
+							        </div>
+							        <div id="tab_personal" class="tab">
+							        	<div class="tab_content">4</div>
+							        </div>
+		    					</div>            
+							</div> 
+						</div>
+					</section>	
+				</div>
+
+				<footer id="inner"></footer>
+
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/3rd_party_libs/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="assets/3rd_party_libs/jquery.selectric.js"></script>
+		<script type="text/javascript" src="assets/js/options.js"></script>
+
+	</body>
+</html>

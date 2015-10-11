@@ -38,7 +38,9 @@ header#inner {
 	height: 50px;
 	background-color: #27a9ff;
 	position: relative;
-	order: 1;	
+	order: 1;
+
+	box-shadow: 0 0px 0 0 rgba(0, 0, 0, 0.2),inset 0 -2px 0 0 rgba(0, 0, 0, 0.3);	
 }
 header#inner .logo {
     margin: 5px 0 0 50px;

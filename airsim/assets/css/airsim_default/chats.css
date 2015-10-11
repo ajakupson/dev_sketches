@@ -123,6 +123,8 @@ textarea {
 }
 section#chat {
 	overflow: visible;
+	display: flex;
+    flex-flow: row wrap;
 }
 section#chat h3 {
 	margin: 10px 0 0 10px;
@@ -143,18 +145,19 @@ aside#chat_participants {
     justify-content: center;
     align-content: flex-start;
 
+    order:2;
+
 }
 .chat_participant {
 	float: left;
 	width: 100px;
-	height: 100px;
 	margin: 15px 5px;
 	position: relative;
 	text-align: center;
 }
 .participant_pic_holder {
 	width: 100%;
-	height: 100%;
+	height: 100px;
 	border: 1px solid #F0F0F0;
 
 	border-radius: 50%;
@@ -187,6 +190,8 @@ div#chat_wrapper {
     min-height: 200px;
     border: 1px solid #F0F0F0;
     float:left;
+
+    order: 1;
 }
 div#chat_messages {
     height: calc(100% - 150px);
@@ -195,6 +200,9 @@ div#chat_messages {
 }
 div.chat_message {
 	margin-top: 5px;
+}
+div.chat_message .participant_pic_holder {
+	height: 75px;
 }
 .message_author {
 	width: 75px;
@@ -262,6 +270,8 @@ aside#all_chats {
 	display: flex;
     flex-flow: row wrap;
     justify-content: center;
+
+    order: 3;
 }
 aside#all_chats .chat {
 	width: calc(100% - 20px);

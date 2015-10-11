@@ -1,0 +1,34 @@
+.tabs > ul > li {
+	width: 25%;
+}
+.tab_content {
+	justify-content: flex-start;
+}
+.settings,
+.settings_description {
+	width: calc(50% - 10px);
+	margin: 0 5px;
+	float: left;
+	border: 1px solid #F0F0F0;
+}
+#tab_safety .settings,
+#tab_safety .settings_description {
+	width: 33.333333% !important;
+	padding: 10px !important;
+}
+.selectric-wrapper {
+    width: 50%;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+	.field_line label {
+		display: block;
+	    width: 100% !important;
+	    padding-left: 0;
+	    margin-bottom: 10px;
+	}
+	.field_line input[type="text"] {
+		width: calc(100% - 10px);
+	}
+}

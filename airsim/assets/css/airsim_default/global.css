@@ -78,7 +78,6 @@ textarea:focus {
 button {
 	padding: 9px 15px;
     background-color: #27a9ff;
-    border: 1px solid #27a9ff;
     color: white;
     font-weight: bold;
     min-width: 100px;
@@ -115,7 +114,6 @@ button.icon_btn {
     -o-border-radius: 5px;
 }
 .field_line {
-	display: block;
 	width: 100%;
 	margin: 7px 10px;
 
@@ -134,6 +132,73 @@ button.icon_btn {
 }
 /* END Froms*/
 
+/* START Tabs */
+.tabs {
+    display:inline-block;
+    width:100%;
+}
+.tabs > div{
+    padding-top:10px;
+}
+.tabs ul {
+    margin:0px;
+    padding:0px;
+    width: 100%;
+}
+.tabs > ul > li {
+    list-style: none;
+    font-weight: bold;
+    font-size: 95%;
+    border: none;
+    background-color: #222d32;
+    padding: 10px 15px;
+    color: white;
+    float:left;
+    cursor: pointer;
+    width: 33.333333%;
+
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0px 0 0 rgba(0, 0, 0, 0.2),inset 0 -1px 0 0 rgba(0, 0, 0, 0.3);
+}
+.tabs > ul > li.active, .tabs > ul > li.active:hover {
+    background:#27a9ff;
+    color:#fff;
+}
+.tabs > ul > li:hover{
+    background-color: #111;
+    color: #27a9ff;
+}
+.tabs > ul > li i {
+    margin: 0 10px;
+}
+.tab {
+    width: 100%;
+    float: left;
+}
+.tab_content {
+    height: 100%;
+    /*min-height: 500px;*/
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+}
+.tab_top_ctrls_wrapper {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    margin: 5px;
+    text-align: right;
+}
+/* END Tabs*/
+
+.left {
+	float: left;
+}
 .w50p {
 	width: 50% !important;
 }
@@ -180,6 +245,12 @@ button.icon_btn {
 /* START Responsiveness */
 .show_for_w533 {
 	display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+    .hide_for_w1023{
+        display: none;
+    }
 }
 /* END Responsiveness */
 
