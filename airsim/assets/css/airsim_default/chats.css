@@ -24,7 +24,8 @@ div#chats {
     align-items: center;
 }
 .chat:hover {
-	background-color: #FAFAFA;
+	/*background-color: #FAFAFA;*/
+	background-color: #d7efff;
 }
 .chat .chat_toolbar {
 	position: absolute;
@@ -213,7 +214,8 @@ div.chat_message .participant_pic_holder {
 	float: left;
 }
 .message_content:hover {
-	background-color: #FAFAFA;
+	/*background-color: #FAFAFA;*/
+	background-color: #d7efff;
 }
 .message_author .participant_pic_holder img {
 	border: 5px solid white;

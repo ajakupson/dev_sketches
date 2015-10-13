@@ -20,7 +20,6 @@
     order: 3;
 }
 .contact {
-    widows: 100%;
     position: relative;
     border: 1px solid #F0F0F0;
     margin: 5px;
@@ -37,7 +36,8 @@
     -o-border-radius: 5px;
 }
 .contact:hover {
-    background: #FAFAFA;
+    /*background: #FAFAFA;*/
+    background-color: #d7efff;
 }
 .contact_section {
     width: 33.333333%;

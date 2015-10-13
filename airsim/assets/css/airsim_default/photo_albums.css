@@ -59,12 +59,16 @@
     overflow: hidden;
     position: relative;
     float: left;
-    border:1px solid #F0F0F0;
 
     display: flex;
+    justify-content:center;
+}
+.profile_cover_wrapper {
+	border: 1px solid #F0F0F0;
 }
 .profile_cover_container img {
 	width: 100%;
+	max-width: 1051px;
 	height: 100%;
     border: 5px solid white;
 }
