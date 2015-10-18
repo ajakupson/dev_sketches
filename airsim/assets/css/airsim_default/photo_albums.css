@@ -26,13 +26,38 @@
 	margin: 10px 5px;
 	border: 1px solid #F0F0F0;
 	display: flex;
+	flex-flow: row wrap;
+    cursor: pointer;
+    text-align: right;
 	cursor: pointer;
+	/*min-height: 178px;*/
+	min-height: 212px;
+
+}
+.album_photos ul li:hover {
+	border: 1px solid #E4E4E4;
+	background-color: #d7efff;
+}
+.album_photos ul li:hover > .img_stats {
 
 }
 .album_photos ul li img {
 	width: 100%;
 	height: 100%;
 	border: 5px solid white;
+}
+.album_photos ul li .img_stats {
+	min-width: 100%;
+	color: #8F8F8F;
+	padding: 0 5px 5px 0;
+
+	align-self: flex-end;
+}
+.album_photos ul li .img_stats span {
+	margin: 5px;
+	padding: 0 2px;
+	font-size: 90%;
+	display: block;
 }
 .album_title {
 	font-weight: bold;
@@ -65,6 +90,7 @@
 }
 .profile_cover_wrapper {
 	border: 1px solid #F0F0F0;
+	display: flex;
 }
 .profile_cover_container img {
 	width: 100%;
@@ -98,9 +124,11 @@
 	width: 200px;
 	border: 1px solid #F0F0F0;
 	margin: 5px;
+	display: flex;
 }
 .image_wrapper img {
 	width: 100%;
+	height: 100%;
 	border: 5px solid white;
 }
 .profile_pic_buttons {

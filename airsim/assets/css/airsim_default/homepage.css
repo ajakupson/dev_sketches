@@ -70,6 +70,7 @@ div#menu_toggle {
     font-size: 130%;
     display: none;
     order: 2;
+    margin-top: 50px;
 }
 div#menu_toggle .btn_wrap {
 	padding: 5px 10px;
@@ -249,6 +250,11 @@ div#page_content {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
+
+    box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.24), 0 1.5px 1px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.24), 0 1.5px 1px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.24), 0 1.5px 1px rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.24), 0 1.5px 1px rgba(0, 0, 0, 0.12);
 }
 .section h1 {
 	font-size: 95%;
@@ -276,7 +282,6 @@ div#page_content {
 .section_footer {
 
 	padding: 5px 15px;
-	border-bottom: 1px solid #F0F0F0;
 
 	box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
 	-webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
@@ -692,6 +697,14 @@ section#user_photos ul li img {
 .accordeon section h1 {
 	cursor: pointer;
 	font-size: 90%;
+
+	transition: 0.25s;
+	-webkit-transition: 0.25s;
+	-moz-transition: 0.25s;
+	-o-transition: 0.25s;
+}
+.accordeon section h1:hover {
+	background-color: #2785ff;
 }
 .accordeon .accordeon_panel {
 	display: none;
@@ -757,14 +770,17 @@ footer#inner {
 }
 .diary_record {
 	font-size: 110%;
+	margin-top: 10px;
 }
 .diary_record h1 {
 	font-size: 95%;
     background: white;
-    padding: 10px 15px;
+    padding: 0 15px 10px 15px;
     color: black;
     border: none;
-    border-bottom: 1px solid #F0F0F0;
+    max-width: 155px;
+    float: left;
+    text-align: center;
 
     box-shadow: none;
     -webkit-box-shadow: none;
@@ -773,8 +789,21 @@ footer#inner {
 
     text-shadow: none;
 }
+.diary_record h3 {
+
+}
+.diary_record_toolbar {
+	display: block;
+	text-align: right;
+	padding: 5px 20px;
+    border-bottom: 1px solid #F0F0F0;
+}
+.diary_record_toolbar i {
+	cursor: pointer;
+	margin: 0 2px;
+}
 .diary_record_author {
-	width: 64px;
+	width: 125px;
     float: left;
     border:1px solid #F0F0F0;
     overflow: hidden;
@@ -782,8 +811,7 @@ footer#inner {
     border-radius: 50%;
 }
 .diary_record_author img {
-    width: 62px;
-    height: 64px;
+    width: 100%;
     float: left;
     display: inline-block;
 
@@ -798,8 +826,10 @@ footer#inner {
 }
 .diary_record_title,
 .diary_record_date {
-    margin: 25px 0 0 10px;
+    margin: 0 0 0 10px;
     display: inline-block;
+    font-size: 110%;
+    line-height: 125px;
 }
 section#diary .section_content {
 	padding: 0;
@@ -823,6 +853,8 @@ section#diary .section_content {
 	float: left;
 	list-style: none;
 	margin:5px 5px 0 5px;
+	position: relative;
+	cursor: pointer;
 }
 .diary_record_images li img {
 	width: 100%;
@@ -834,6 +866,27 @@ section#diary .section_content {
 .diary_record_images li:first-child,
 .diary_record_images li:nth-child(2) {
 	width: calc(50% - 20px) !important;
+}
+.diary_record_images li i {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #222d32;
+	color: white;
+	padding: 5px;
+	display: none;
+	cursor: pointer;
+}
+.diary_record_images li:hover i {
+	display: inline-block;
+}
+.diary_record_replies {
+	display: block;
+	width: 100%;
+}
+.diary_record_replies .reply {
+	display: block;
+	margin: 10px 0 10px 100px;
 }
 /* END Diary */
 
@@ -968,6 +1021,7 @@ section#diary .section_content {
 
 	div#content_wrapper {
 		height: auto;
+		margin-top: 0;
 	}
 }
 

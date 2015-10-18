@@ -13,12 +13,30 @@
 }
 #tab_safety .settings,
 #tab_safety .settings_description {
-	width: 33.333333% !important;
+	width: 33.333333%;
 	padding: 10px !important;
 }
 .selectric-wrapper {
     width: 50%;
     display: inline-block;
+}
+#options.section {
+	overflow: visible;
+}
+#options h2 {
+	font-size: 110%;
+}
+#tab_safety button {
+	margin-left: 10px;
+}
+#tab_personal .settings {
+	padding: 10px !important;
+}
+
+@media only screen and (max-width: 1280px) {
+	.settings {
+		width: calc(50% - 10px) !important;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -30,5 +48,13 @@
 	}
 	.field_line input[type="text"] {
 		width: calc(100% - 10px);
+	}
+}
+@media only screen and (max-width: 1023px) {
+	.settings {
+		width: 100% !important;
+	}
+	#tab_safety button {
+		margin-left: 0;
 	}
 }
